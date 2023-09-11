@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ServerMonPy Documentation</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+        }
+        .nav {
+            flex: 1;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        .nav li {
+            margin-bottom: 10px;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h2>Documentation</h2>
+            <ul>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#what-is-ssh">What is SSH</a></li>
+                <li><a href="#how-to-setup-ssh">How to Setup SSH</a></li>
+                <li><a href="#ServerMonPy-commandline-interface">ServerMonPy Command Line Interface</a></li>
+                <li><a href="#changelog">Changelog</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#contributing">Contributing</a></li>
+                <li><a href="#license">License</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Welcome to the ServerMonPy Documentation</h1>
+            <section id="getting-started">
+                <h2>Getting Started</h2>
+                    <p>Welcome to ServerMonPy, a powerful Python tool designed for monitoring SSH server usage and performance. Whether you're a system administrator or a developer, ServerMonPy provides valuable insights into your SSH-enabled servers, helping you keep an eye on critical server metrics and ensuring optimal performance.</p>
+                
+                    <p>Getting started with ServerMonPy is a breeze. Follow these simple steps to start monitoring your SSH servers:</p>
+                
+                    <h3>1. Installation</h3>
+                    <p>Begin by installing ServerMonPy using pip, Python's package manager. Open your terminal and run:</p>
+                    <pre><code alight = center >pip install ServerMonPy</code></pre>
+                
+                    <h3>2. Command Line Interface</h3>
+                    <p>ServerMonPy comes with a user-friendly command-line interface (CLI). To get a quick overview of available options, run:</p>
+                    <pre><code>ServerMonPy --help</code></pre>
+                
+                    <p>Explore the various subcommands and options to tailor ServerMonPy to your monitoring needs.</p>
+                
+                    <h3>3. Basic Usage</h3>
+                    <p>Monitor your SSH server by simply running the following command:</p>
+                    <pre><code>ServerMonPy monitor</code></pre>
+                
+                    <p>This will initiate real-time monitoring and display vital statistics such as CPU usage, memory utilization, network I/O, and more.</p>
+                
+                    <h3>4. Advanced Configuration</h3>
+                    <p>ServerMonPy is highly customizable. You can specify the target server, monitor interval, and output format to suit your preferences. Dive into the documentation to learn how to configure ServerMonPy for your specific use case.</p>
+                
+                    <h3>5. Stay Informed</h3>
+                    <p>Stay informed about your server's health and performance. ServerMonPy will continuously update you on your server's vital statistics. Use this data to proactively address issues and optimize server resources.</p>
+                
+                    <p>Congratulations! You are now ready to harness the power of ServerMonPy to monitor your SSH servers effectively. Dive into the detailed documentation for more in-depth information and advanced usage scenarios.</p>
+                </section>
+                
+            </section>
+            <section id="what-is-ssh">
+                <h1>What is SSH (Secure Shell)?</h1>
+
+                <p>SSH, or Secure Shell, is a cryptographic network protocol that provides a secure and encrypted method for remote communication between computers over an unsecured network, such as the internet. It is widely used for secure remote administration of servers and secure file transfers.</p>
+            
+                <p>SSH ensures the confidentiality and integrity of data transmitted over a network, making it an essential tool for secure server management and data exchange. It achieves this through several key features:</p>
+            
+                <ul>
+                    <li><strong>Encryption:</strong> SSH encrypts data transmitted between the client and the server, protecting it from eavesdropping and interception.</li>
+                    <li><strong>Authentication:</strong> SSH uses various authentication methods, including password-based authentication and public key authentication, to verify the identity of the user or system.</li>
+                    <li><strong>Secure Channels:</strong> SSH creates secure channels for different types of communication, such as interactive shell sessions and file transfers.</li>
+                    <li><strong>Port Forwarding:</strong> SSH allows for secure port forwarding, enabling users to access services on remote servers securely.</li>
+                </ul>
+            
+                <p>SSH is commonly used by system administrators, developers, and anyone who needs to securely access and manage remote servers and devices. It is an indispensable tool for maintaining the confidentiality and integrity of sensitive data in a networked environment.</p>
+            
+                <p>SSH is widely supported on various operating systems and is the go-to choice for remote server management in the world of IT and cybersecurity.</p>
+            </section>
+            <section id="how-to-setup-ssh">
+                <h2>How to Setup SSH</h2>
+                <p>Setting up SSH (Secure Shell) is a crucial step in securing remote access to your server. SSH provides a secure method for connecting to your server over a network. This guide will walk you through the process of setting up SSH on your server and configuring it for secure and convenient access.</p>
+            
+                <h3>Step 1: Server Preparation</h3>
+                <p>Before setting up SSH, ensure that you have access to your server with administrative privileges. If you don't have direct access, make sure you have a user account with administrative rights.</p>
+            
+                <h3>Step 2: Check SSH Availability</h3>
+                <p>Most modern Linux distributions come with SSH pre-installed. To check if SSH is installed, open your terminal and run:</p>
+                <pre><code>ssh -V</code></pre>
+                <p>If SSH is not installed, you can typically install it using your package manager. For example, on Ubuntu, you can run:</p>
+                <pre><code>sudo apt-get install openssh-server</code></pre>
+            
+                <h3>Step 3: Configure SSH</h3>
+                <p>SSH can be configured using the SSH server configuration file, typically located at <code>/etc/ssh/sshd_config</code>. You can edit this file using a text editor like nano or vi. Ensure that the following settings are configured securely:</p>
+                <ul>
+                    <li>Disable root login: Set <code>PermitRootLogin</code> to <code>no</code>.</li>
+                    <li>Use strong authentication: Consider using public key authentication alongside password authentication.</li>
+                    <li>Limit login attempts: Set <code>MaxAuthTries</code> to a reasonable value to prevent brute-force attacks.</li>
+                    <li>Restrict user access: Use <code>AllowUsers</code> or <code>AllowGroups</code> to specify which users or groups can access SSH.</li>
+                    <li>Enable firewall rules: Open port 22 (default SSH port) in your firewall to allow SSH traffic.</li>
+                </ul>
+            
+                <h3>Step 4: Restart SSH Service</h3>
+                <p>After making changes to the SSH configuration file, restart the SSH service to apply the settings:</p>
+                <pre><code>sudo systemctl restart ssh</code></pre>
+            
+                <h3>Step 5: Test SSH Connection</h3>
+                <p>Test the SSH connection to ensure it's working as expected. Use the following command to connect to your server:</p>
+                <pre><code>ssh username@server_ip_or_hostname</code></pre>
+                <p>Replace <code>username</code> with your username and <code>server_ip_or_hostname</code> with your server's IP address or hostname.</p>
+            
+                <h3>Step 6: Secure SSH Keys (Optional)</h3>
+                <p>Consider using SSH key pairs for authentication. This provides an extra layer of security by eliminating the need for passwords.</p>
+            
+                <p>That's it! You've successfully set up SSH on your server. You can now securely access your server remotely using SSH, and it's recommended to follow best practices to keep your SSH configuration secure.</p>
+            </section>
+            
+            <section id="ServerMonPy-commandline-interface">
+                <h2>ServerMonPy Command Line Interface</h2>
+                    <p>The ServerMonPy command-line interface (CLI) is a powerful tool for monitoring and gathering information about SSH server usage and performance. It allows system administrators and developers to remotely assess the health and status of SSH-enabled servers. Below, we'll explore the key features and commands available in ServerMonPy.</p>
+                
+                    <h3>Features:</h3>
+                    <ul>
+                        <li><strong>Real-time Monitoring:</strong> ServerMonPy provides real-time monitoring of SSH server statistics, including CPU usage, memory usage, network I/O, and more.</li>
+                        <li><strong>Easy-to-Use:</strong> The CLI is designed for simplicity and ease of use, making it accessible to both novice and experienced users.</li>
+                        <li><strong>Customizable Output:</strong> Users can customize the output format and choose specific metrics to display, tailoring the tool to their needs.</li>
+                        <li><strong>Secure Authentication:</strong> ServerMonPy supports secure authentication methods, ensuring that only authorized users can access server statistics.</li>
+                        <li><strong>Cross-Platform:</strong> The tool is compatible with various operating systems, making it versatile for different server environments.</li>
+                    </ul>
+                
+                    <h3>Commands:</h3>
+                    <p>ServerMonPy offers a range of commands to gather and display server statistics:</p>
+                
+                    <ul>
+                        <li><code>ServerMonPy status</code>: Provides an overview of the server's current status, including CPU and memory usage.</li>
+                        <li><code>ServerMonPy network</code>: Displays network-related statistics, such as bytes sent and received.</li>
+                        <li><code>ServerMonPy memory</code>: Reports on memory usage, including available and used memory.</li>
+                        <li><code>ServerMonPy processes</code>: Lists the active processes on the server.</li>
+                        <li><code>ServerMonPy users</code>: Shows a list of connected users and their activities.</li>
+                    </ul>
+                
+                    <h3>Getting Started:</h3>
+                    <p>To use ServerMonPy, follow these steps:</p>
+                
+                    <ol>
+                        <li>Install ServerMonPy using pip: <code>pip install ServerMonPy</code></li>
+                        <li>Run ServerMonPy with the desired command: <code>ServerMonPy status</code>, <code>ServerMonPy network</code>, etc.</li>
+                        <li>Review the real-time server statistics provided by the tool.</li>
+                    </ol>
+                
+                    <p>ServerMonPy simplifies the process of monitoring and maintaining SSH servers, ensuring optimal performance and security. Whether you're managing a single server or a network of servers, ServerMonPy is a valuable addition to your toolkit.</p>
+                </section>
+                </p>
+            </section>
+            <section id="changelog">
+                    <h2>Changelog</h2>
+                    <p>Welcome to the changelog for ServerMonPy! This section provides a detailed history of changes, updates, and improvements made to the ServerMonPy tool over time.</p>
+                    
+                    <h3>Version 1.0.0 (Release Date: July 1, 2023)</h3>
+                    <p>This is the initial release of ServerMonPy, offering powerful server monitoring capabilities for SSH-enabled servers.</p>
+                
+                    <h3>Version 1.1.0 (Release Date: August 15, 2023)</h3>
+                    <p>In this update, we've introduced new features and enhancements:</p>
+                    <ul>
+                        <li>Added real-time CPU utilization tracking for improved performance monitoring.</li>
+                        <li>Enhanced memory usage statistics to include cached memory information.</li>
+                        <li>Improved network I/O tracking with detailed sent and received data.</li>
+                    </ul>
+                
+                    <h3>Version 1.2.0 (Release Date: September 30, 2023)</h3>
+                    <p>This release focuses on usability and stability:</p>
+                    <ul>
+                        <li>Implemented a user-friendly command-line interface (CLI) for easier interaction.</li>
+                        <li>Added support for custom monitoring intervals, allowing users to specify update frequencies.</li>
+                        <li>Fixed various bugs and issues reported by our community members.</li>
+                    </ul>
+                
+                    <h3>Version 1.3.0 (Release Date: November 15, 2023)</h3>
+                    <p>In this update, we're introducing exciting new capabilities:</p>
+                    <ul>
+                        <li>Enhanced server discovery to support multiple SSH servers on the same host.</li>
+                        <li>Added a powerful search feature for quickly finding specific server statistics.</li>
+                        <li>Improved documentation with detailed usage examples and installation instructions.</li>
+                    </ul>
+                
+                    <p>Thank you for using ServerMonPy and providing valuable feedback. We're committed to delivering an exceptional monitoring experience, and we look forward to your continued support.</p>
+                
+            </section>
+            <section id="installation">
+                <h2>Installation</h2>
+                <p>Installing ServerMonPy is a straightforward process that allows you to quickly get started with monitoring SSH server performance. This section provides step-by-step instructions for installing ServerMonPy on your system.</p>
+            
+                <h3>Prerequisites</h3>
+                <p>Before you begin the installation, ensure that you have the following prerequisites:</p>
+                <ul>
+                    <li>A Python environment: ServerMonPy is a Python tool, so you need to have Python installed on your system. You can download Python from the official Python website (https://www.python.org/downloads/).</li>
+                    <li>Pip: Pip is the Python package manager, and it's used to install external Python packages. Most Python installations come with pip pre-installed, but you can check by running <code>pip --version</code> in your terminal.</li>
+                    <li>SSH-enabled server: To use ServerMonPy, you need access to an SSH-enabled server that you want to monitor. You should have the server's hostname or IP address, a valid username, and password or SSH key for authentication.</li>
+                </ul>
+            
+                <h3>Installation Steps</h3>
+                <p>Follow these steps to install ServerMonPy:</p>
+                <ol>
+                    <li>Open a terminal or command prompt on your local machine.</li>
+                    <li>Use pip to install ServerMonPy by running the following command:</li>
+                </ol>
+            
+                <pre><code>pip install ServerMonPy</code></pre>
+            
+                <p>This command will download and install ServerMonPy and its dependencies.</p>
+            
+                <h3>Verification</h3>
+                <p>To verify the installation, you can run the following command:</p>
+            
+                <pre><code>ServerMonPy --version</code></pre>
+            
+                <p>If the installation was successful, this command will display the installed version of ServerMonPy.</p>
+            
+                <h3>Getting Started</h3>
+                <p>Once you have ServerMonPy installed, you can proceed to the <a href="#getting-started">Getting Started</a> section to learn how to use it to monitor your SSH-enabled servers.</p>
+            </section>
+            
+            <section id="usage">
+                <h2>Usage</h2>
+                <p>ServerMonPy is a versatile Python tool designed to provide comprehensive monitoring of SSH server usage and performance. Whether you are a system administrator managing multiple servers or a curious user wanting to gain insights into your server's behavior, ServerMonPy can be a valuable addition to your toolkit.</p>
+            
+                <p>With ServerMonPy, you can effortlessly monitor key server metrics, including:</p>
+            
+                <ul>
+                    <li>CPU Usage: ServerMonPy measures the CPU utilization of your SSH server, helping you identify performance bottlenecks and anomalies.</li>
+                    <li>Memory Usage: Gain insights into your server's memory consumption, including total, available, and used memory, as well as memory usage percentages.</li>
+                    <li>Network I/O: ServerMonPy tracks network input and output, making it easy to spot unusual network activity or bandwidth usage.</li>
+                    <li>Swap Usage: Keep an eye on your server's swap memory usage to prevent memory-related issues.</li>
+                </ul>
+            
+                <p>Using ServerMonPy is a straightforward process:</p>
+            
+                <ol>
+                    <li>Install ServerMonPy by running <code>pip install ServerMonPy</code>.</li>
+                    <li>Once installed, you can run the tool with a simple command: <code>ServerMonPy</code>. By default, it will connect to the local SSH server on port 22. You can specify a different hostname or IP address as an argument.</li>
+                    <li>ServerMonPy will then start monitoring the selected SSH server and display real-time updates on your terminal. You can stop monitoring by pressing 'q'.</li>
+                </ol>
+            
+                <p>ServerMonPy is highly customizable, allowing you to adjust monitoring intervals and parameters to suit your specific needs. You can also integrate it into your own scripts or monitoring solutions to automate server performance checks.</p>
+            
+                <p>Whether you are troubleshooting server issues, optimizing resource usage, or simply curious about your server's behavior, ServerMonPy provides the data you need to make informed decisions and keep your SSH server running smoothly.</p>
+            </section>
+            
+            <section id="contributing">
+                <h2>Contributing</h2>
+                <p>Guidelines for contributing to ServerMonPy.</p>
+            </section>
+            <section id="license">
+                <h2>License</h2>
+                <p>Information about the license of ServerMonPy.</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

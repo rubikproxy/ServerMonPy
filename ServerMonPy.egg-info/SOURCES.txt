@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ServerMonPy/__init__.py
+ServerMonPy/main.py.py
+ServerMonPy.egg-info/PKG-INFO
+ServerMonPy.egg-info/SOURCES.txt
+ServerMonPy.egg-info/dependency_links.txt
+ServerMonPy.egg-info/entry_points.txt
+ServerMonPy.egg-info/requires.txt
+ServerMonPy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py
