@@ -15,7 +15,7 @@
 
 - Download: https://pypi.org/project/ServerMonPy/
 - Source: https://github.com/rubikproxy/ServerMonPy
-- Docs: https://servermonpy.netlify.app/
+- Docs: https://rubikproxy.github.io/ServerMonPy/
 
 In an increasingly interconnected world, the reliable and efficient operation of servers and remote machines is paramount. 
 Whether you are managing a critical infrastructure, a cloud-based application, or a personal server, 
