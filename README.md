@@ -201,9 +201,6 @@ PEP-8 should be followed where possible, but feel free to ignore the 80
 character limit it imposes (120 is a good marker IMO).
 
 ## Contributors
-
-We would like to thank the following contributors to this project:
-
 1. [LOGU](https://www.linkedin.com/in/logu-k/)
 2. [GANESAN](https://www.linkedin.com/in/ganesan-perumal/)
 3. [SURESH](https://www.linkedin.com/in/suresh-r/)
