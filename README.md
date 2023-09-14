@@ -203,6 +203,6 @@ character limit it imposes (120 is a good marker IMO).
 ## Contributors
 1. [LOGU](https://www.linkedin.com/in/logu-k/)
 2. [GANESAN](https://www.linkedin.com/in/ganesan-perumal/)
-3. [SURESH](https://www.linkedin.com/in/suresh-r/)
+3. [SURESH](https://github.com/SureshGitLab)
 4. [HEMACHANDERAN](https://www.linkedin.com/in/hemachandran-r-4b409a255/)
 5. [SANJAY KUMAR](https://www.linkedin.com/in/rubikproxy/)
