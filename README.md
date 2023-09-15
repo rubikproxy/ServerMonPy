@@ -207,5 +207,5 @@ We would like to thank the following contributors to this project:
 1. [LOGU](https://www.linkedin.com/in/logu-k/)
 2. [GANESAN](https://www.linkedin.com/in/ganesan-perumal/)
 3. [SURESH](https://github.com/SureshGitLab)
-4. [HEMACHANDERAN](https://www.linkedin.com/in/hemachandran-r-4b409a255/)
+4. [HEMACHANDERAN-R](https://www.linkedin.com/in/hemachandran-r-4b409a255/)
 5. [SANJAY KUMAR](https://www.linkedin.com/in/rubikproxy/)
