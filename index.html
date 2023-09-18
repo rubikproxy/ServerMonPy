@@ -2,39 +2,97 @@
 <html>
 <head>
     <title>ServerMonPy Documentation</title>
-    <style>
-        /* Basic CSS for styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            display: flex;
-        }
-        .nav {
-            flex: 1;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
-        .nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        .nav li {
-            margin-bottom: 10px;
-        }
-        .content {
-            flex: 3;
-            padding: 20px;
-        }
-    </style>
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+     
+    }
+    .container {
+        display: flex;
+        padding: 20px;
+        border: 1px solid #ddd; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .nav {
+        flex: 1;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        margin-right: 20px;
+    }
+    
+    .nav ul {
+        list-style: disc; /* Use bullet points */
+        padding-left: 20px; /* Add indentation */
+        position: fixed; /* Fix the position */
+       /* top: 0; /* Position at the top of the viewport */
+        width: 250px; /* Adjust the width as needed */
+    }
+    
+    .nav li {
+        margin-bottom: 8px; /* Reduce spacing between list items */
+    }
+    
+    .content {
+        flex: 3;
+        padding: 20px;
+        background-color: #f7f7f7; /* Light gray background */
+        color: #333; /* Dark text color */
+    }
+    
+    a {
+        text-decoration: none; /* Remove underlines */
+        color: #007acc; /* Blue link color */
+    }
+    
+    a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    
+    h1, h2, h3 {
+        font-family: 'Arial', sans-serif;
+    }
+    
+    h1 {
+        font-size: 32px; /* Larger font size for main headings */
+        color: #333;
+    }
+    
+    h2 {
+        font-size: 24px; /* Slightly smaller for subheadings */
+        color: #555;
+    }
+    
+    h3 {
+        font-size: 20px; /* Smaller for sub-subheadings */
+        color: #777;
+    }
+    
+    pre {
+        background-color: #f2f2f2; /* Light gray background */
+        padding: 10px;
+        border-radius: 4px;
+        overflow-x: auto; /* Add horizontal scrollbar if needed */
+    }
+    
+    code {
+        font-family: 'Courier New', monospace;
+    }
+    
+    
+    .d{
+        position: fixed;
+        top: 0; 
+        width: 250px; 
+    }</style>
 </head>
 <body>
     <div class="container">
         <div class="nav">
-            <h2>Documentation</h2>
+            <h2 class="d">Documentation</h2>
             <ul>
                 <li><a href="#getting-started">Getting Started</a></li>
                 <li><a href="#what-is-ssh">What is SSH(secure shell)</a></li>
