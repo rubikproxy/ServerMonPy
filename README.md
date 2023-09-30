@@ -36,7 +36,7 @@ ServerMonPy excels at real-time monitoring, delivering vital information about y
 2. Secure Authentication
 Authentication is a cornerstone of secure server management. ServerMonPy ensures your credentials are protected by utilizing SSH for secure and encrypted connections. Your login credentials remain confidential throughout the monitoring process.
 
-3. User-Friendly Interface
+3. User-Friendly Interfaces
 The command-line interface of ServerMonPy is designed for simplicity and ease of use. Anyone, from beginners to seasoned professionals, can quickly grasp its functionality and start monitoring servers with confidence.
 
 4. Customizable Monitoring
