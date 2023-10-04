@@ -10,12 +10,13 @@
   <img src="https://img.shields.io/badge/Author-rubikproxy-blue?style=flat-square">
   <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-lightblue?style=flat-square">
-  <img src="https://img.shields.io/badge/Written%20In-Bash-darkcyan?style=flat-square">
+  <img src="https://img.shields.io/badge/Written%20In-Python-darkcyan?style=flat-square">
 </p>
 
 - Download: https://pypi.org/project/ServerMonPy/
 - Source: https://github.com/rubikproxy/ServerMonPy
 - Docs: https://rubikproxy.github.io/ServerMonPy/
+- GUI : https://github.com/rubikproxy/ServerMonPy/releases
 
 In an increasingly interconnected world, the reliable and efficient operation of servers and remote machines is paramount. 
 Whether you are managing a critical infrastructure, a cloud-based application, or a personal server, 
@@ -35,7 +36,7 @@ ServerMonPy excels at real-time monitoring, delivering vital information about y
 2. Secure Authentication
 Authentication is a cornerstone of secure server management. ServerMonPy ensures your credentials are protected by utilizing SSH for secure and encrypted connections. Your login credentials remain confidential throughout the monitoring process.
 
-3. User-Friendly Interface
+3. User-Friendly Interfaces
 The command-line interface of ServerMonPy is designed for simplicity and ease of use. Anyone, from beginners to seasoned professionals, can quickly grasp its functionality and start monitoring servers with confidence.
 
 4. Customizable Monitoring
