@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/rubikproxy/ServerMonPy/assets/84948167/3038e2f0-9434-43d1-b338-8586dba1b9a3"></img>
+<img src="https://github.com/rubikproxy/ServerMonPy/assets/84948167/033af428-8b97-4ed4-ae69-795f2be7d174"></img>
 </p>
 <h1 align="center">ServerMonPy - Welcome to ServerMonPy - Real-time Server Monitoring 2023</h1>
 <p align="center">
