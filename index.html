@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>ServerMonPy Documentation</title>
+    <link rel="icon" type="image/x-icon" href="https://github.com/rubikproxy/ServerMonPy/assets/84948167/3038e2f0-9434-43d1-b338-8586dba1b9a3">
+    
    <style>
     body {
         font-family: Arial, sans-serif;
@@ -20,8 +22,8 @@
         flex: 1;
         background-color: #333;
         color: #fff;
-        padding: 20px;
-        margin-right: 20px;
+        padding: 65px;
+        margin-right: -10px;
     }
     
     .nav ul {
@@ -63,7 +65,7 @@
     
     h2 {
         font-size: 24px; /* Slightly smaller for subheadings */
-        color: #555;
+        color: #000;
     }
     
     h3 {
@@ -87,22 +89,23 @@
         position: fixed;
         top: 0; 
         width: 250px; 
-    }</style>
+    }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="nav">
-            <h2 class="d">Documentation</h2>
             <ul>
                 <li><a href="#getting-started">Getting Started</a></li>
-                <li><a href="#what-is-ssh">What is SSH(secure shell)</a></li>
+                <li><a href="#what-is-ssh">What is SSH</a></li>
                 <li><a href="#how-to-setup-ssh">How to Setup SSH</a></li>
-                <li><a href="#ServerMonPy-commandline-interface">ServerMonPy Command Line Interface</a></li>
+                <li><a href="#ServerMonPy-commandline-interface">ServerMonPy In CLI</a></li>
+                <li><a href="#ServerMonPy-GUI">ServerMonPy In GUI</a></li>
                 <li><a href="#changelog">Changelog</a></li>
                 <li><a href="#installation">Installation</a></li>
                 <li><a href="#usage">Usage</a></li>
-                <li><a href="#contributing">Contributing</a></li>
                 <li><a href="#license">License</a></li>
+
             </ul>
         </div>
         <div class="content">
@@ -292,8 +295,7 @@
                 <h3>Verification</h3>
                 <p>To verify the installation, you can run the following command:</p>
             
-                <pre><code>ServerMonPy --version</code></pre>
-            
+                <pre><code>ServerMonPy --version</code></pre>            
                 <p>If the installation was successful, this command will display the installed version of ServerMonPy.</p>
             
                 <h3>Getting Started</h3>
@@ -325,14 +327,24 @@
             
                 <p>Whether you are troubleshooting server issues, optimizing resource usage, or simply curious about your server's behavior, ServerMonPy provides the data you need to make informed decisions and keep your SSH server running smoothly.</p>
             </section>
-            
-            <section id="contributing">
-                <h2>Contributing</h2>
-                <p>Guidelines for contributing to ServerMonPy.</p>
+            <section id="ServerMonPy-GUI">
+                <p>Get started with ServerMonPy GUI on Windows by following these easy steps:</p>
+
+                <!-- Windows Installation -->
+                <h3>ServerMonPy For Windows:</h3>
+                <p>Follow these steps to install ServerMonPy on your Windows machine:</p>
+                <ol>
+                    <li>Click the <a href="https://github.com/rubikproxy/ServerMonPy/releases/download/ServerMonPy_Setup/ServerMonPy_Setup.exe" download="ServerMonPy-GUI-Software.zip">Download Now</a> button to download the ServerMonPy installer for Windows.</li>
+                    <li>Run the downloaded installer (ServerMonPy_Setup.exe).</li>
+                    <li>Follow the on-screen instructions to complete the installation.</li>
+                    <li>Once installed, launch ServerMonPy from the Start menu or desktop shortcut.</li>
+                </ol>
+                <img src="https://i.ibb.co/1bhX6yw/screenshot.png" alt="Windows Installation Screenshot" class="installation-screenshot">
             </section>
             <section id="license">
                 <h2>License</h2>
                 <p>Information about the license of ServerMonPy.</p>
+                <a href="https://github.com/rubikproxy/ServerMonPy/blob/main/LICENSE">View License</a>
             </section>
         </div>
     </div>
