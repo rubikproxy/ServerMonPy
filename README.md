@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/rubikproxy/ServerMonPy/assets/84948167/3038e2f0-9434-43d1-b338-8586dba1b9a3"></img>
+<img src="https://github.com/rubikproxy/ServerMonPy/assets/84948167/033af428-8b97-4ed4-ae69-795f2be7d174" width="200" height="200"></img>
 </p>
 <h1 align="center">ServerMonPy - Welcome to ServerMonPy - Real-time Server Monitoring 2023</h1>
 <p align="center">
@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/Author-rubikproxy-blue?style=flat-square">
   <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-lightblue?style=flat-square">
-  <img src="https://img.shields.io/badge/Written%20In-Bash-darkcyan?style=flat-square">
+  <img src="https://img.shields.io/badge/Written%20In-Python-darkcyan?style=flat-square">
 </p>
 
 - Download: https://pypi.org/project/ServerMonPy/
@@ -36,7 +36,7 @@ ServerMonPy excels at real-time monitoring, delivering vital information about y
 2. Secure Authentication
 Authentication is a cornerstone of secure server management. ServerMonPy ensures your credentials are protected by utilizing SSH for secure and encrypted connections. Your login credentials remain confidential throughout the monitoring process.
 
-3. User-Friendly Interface
+3. User-Friendly Interfaces
 The command-line interface of ServerMonPy is designed for simplicity and ease of use. Anyone, from beginners to seasoned professionals, can quickly grasp its functionality and start monitoring servers with confidence.
 
 4. Customizable Monitoring
