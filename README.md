@@ -136,7 +136,7 @@ To run the project's tests locally, follow these steps:
 1. **Clone the Repository**: If you haven't already, clone the **ServerMonPy** repository to your local machine.
 
     ```bash
-    git clone https://github.com/OriginalRepoOwner/ServerMonPy.git
+    git clone https://github.com/rubikproxy/ServerMonPy.git
     ```
 
 2. **Install Dependencies**: Ensure you have the required dependencies installed. You can install them using `pip`:
