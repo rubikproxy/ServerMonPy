@@ -14,7 +14,7 @@ with open("README.md", "r", encoding="utf-8") as readme_file:
 
 # List of project dependencies
 REQUIREMENTS = [
-    "paramiko==2.8.0",
+    "paramiko==3.4.0",
     "psutil==5.8.0",
 ]
 
